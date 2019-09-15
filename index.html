@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="nav">
+		<a href="#" class="fa fa-home" id="icon-a"></a>
+		</div>
+		<div class="">	
+			<button onclick="openPage('about', this, 'green')"> <div id="nav-a">about</div></button>
+		</div>
+		<div class="">
+			<button onclick="openPage('signup', this, 'blue')"><div id="nav-a">signup</div> </button>
+		</div>	
+		<div class="">	
+			<button  onclick="openPage('category', this, 'orange')"><div id="nav-a">Category</div></button>
+		</div>
+		<div class="nav">
+			<form method="get" onclick="www.google.com" id="nav-a">
+				<input type="text" name="search" placeholder="search here" value="" id="inp-a">
+				<input type="button" name="submit" value="GO"id="but-a">
+			</form>
+		</div>
+	</div>
+	<div id="Home" class="tabcontent">
+  		<h3>Home</h3>
+  		<p>Home is where the heart is..</p>
+	</div>
+
+	<div id="about" class="tabcontent">
+	  <h3>News</h3>
+	  <p>Some news this fine day!</p> 
+	</div>
+
+	<div id="signup" class="tabcontent">
+	  <h3>Contact</h3>
+	  <p>Get in touch, or swing by for a cup of coffee.</p>
+	</div>
+
+	<div id="category" class="tabcontent">
+	  <h3>About</h3>
+	  <p>Who we are and what we do.</p>
+	</div>
+	<div class="section">
+		<div class="grid-container">
+			<div class="item1">
+				<div class="v-container">
+					<div class="s1">
+						Newspapers
+					</div>
+					<div class="v-nav">
+						<a href="#" id="a2">Hindustan</a>
+					</div>
+					<div class="v-nav">
+						<a href="#" id="a2">Dainik-Jagran</a>
+					</div>
+					<div class="v-nav">
+						<a href="#" id="a2">Amar-Ujala</a>
+					</div>
+					<div class="v-nav">
+						<a href="#" id="a2">Dainik-Bhaskar</a>
+					</div>
+					<div class="v-nav">
+						<a href="#" id="a2">NBT</a>
+					</div>
+					<div class="v-nav">
+						<a href="#" id="a2">Jan-Satta</a>
+					</div>
+					<div class="v-nav">
+						<a href="#" id="a2">The Hindu</a>
+					</div>
+					<div class="v-nav">
+						<a href="#" id="a2">Hindustan Times</a>
+					</div>
+				</div>
+			</div>
+			<div class="item2">
+				<div class="">
+					<img src="images/front-page.jpg" id="img1">
+				</div>
+			</div>
+			<div class="item6">
+				<div class="img-h">
+					<h1>Advertisement Hub</h1>
+				</div>
+			</div>
+			<div class="item3">
+				<div class="v-container">
+					<div class="s1">Magazines</div>
+					<div class="v-nav">
+						<a href="#" id="a2">India Today</a>
+					</div>
+					<div class="v-nav">
+						<a href="#" id="a2">Sarita</a>
+					</div>
+					<div class="v-nav">
+						<a href="#" id="a2">Champak</a>
+					</div>
+					<div class="v-nav">
+						<a href="#" id="a2">Chakmak</a>
+					</div>
+					<div class="v-nav">
+						<a href="#" id="a2">Shabdankan</a>
+					</div>
+					<div class="v-nav">
+						<a href="#" id="a2">Sarvottam patra</a>
+					</div>	
+				</div>
+			</div>
+			<div class="item4">
+					<img src="images/img3.jpg" id="img-2">
+			</div>
+			<div class="item5">
+					<img src="images/img2.png" id="img-2">
+			</div>
+		</div>
+	<div class="bot">
+		<div id="bot-sub">
+		<p id="text-a" >
+			Subscribe to our newsletter for tips on design and structure of your Advertisement and Articles.
+		</p>
+		</div>
+		<div class="bot-sub">
+			<form method="get" class="form-bot">
+				<input type="email" name="mail" placeholder="E-mail ID" id="inp-b">
+				<input type="button" name="button" placeholder="GO" value="GO" id="but-b">
+			</form>
+		</div>
+	</div>
+	<div class="linkis">
+		<a href="#" class="fa fa-facebook" id="link-a"></a>
+		<a href="#" class="fa fa-twitter" id="link-a"></a>
+		<a href="#" class= "fa fa-envelope" id="link-a"></a>
+		<a href="#" class= "fa fa-youtube" id="link-a"></a>
+		<a href="#" class= "fa fa-pinterest" id="link-a"></a>
+		<a href="#" class= "fa fa-snapchat" id="link-a"></a>
+
+	</div>
+</div>
+	<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, nav;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("nav");
+  for (i = 0; i < nav-a.length; i++) {
+    nav[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
